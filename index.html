@@ -2,17 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Awesome-pyecharts</title>
+    <title>footmap</title>
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
         <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
 
 </head>
 <body>
-    <div id="f2e663dfc3a4471a9f2293cb5b79c860" class="chart-container" style="width:1200px; height:800px;margin:auto;top:30px"></div>
+    <div id="369ef97f64ad4c64a3d5ac6176d14b18" class="chart-container" style="width:1200px; height:800px; margin:auto; top:30px;"></div>
     <script>
-        var chart_f2e663dfc3a4471a9f2293cb5b79c860 = echarts.init(
-            document.getElementById('f2e663dfc3a4471a9f2293cb5b79c860'), 'white', {renderer: 'canvas'});
-        var option_f2e663dfc3a4471a9f2293cb5b79c860 = {
+        var chart_369ef97f64ad4c64a3d5ac6176d14b18 = echarts.init(
+            document.getElementById('369ef97f64ad4c64a3d5ac6176d14b18'), 'white', {renderer: 'canvas'});
+        var option_369ef97f64ad4c64a3d5ac6176d14b18 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -76,6 +76,10 @@
                 },
                 {
                     "name": "\u6c5f\u82cf\u7701",
+                    "value": 1
+                },
+                {
+                    "name": "\u6d59\u6c5f\u7701",
                     "value": 1
                 },
                 {
@@ -163,8 +167,8 @@
         ]
     }
 };
-        chart_f2e663dfc3a4471a9f2293cb5b79c860.setOption(option_f2e663dfc3a4471a9f2293cb5b79c860);
-        chart_f2e663dfc3a4471a9f2293cb5b79c860.on('click', function (param){
+        chart_369ef97f64ad4c64a3d5ac6176d14b18.setOption(option_369ef97f64ad4c64a3d5ac6176d14b18);
+        chart_369ef97f64ad4c64a3d5ac6176d14b18.on('click', function (param){
             var selected = param.name;
                 if (selected) {
                     switch(selected){
@@ -191,6 +195,9 @@
                             break;
                         case '湖北省':
                             location.href = "provinces/湖北.html";
+                            break;
+                        case '浙江省':
+                            location.href = "provinces/浙江.html";
                             break;
                         default:
                             break;

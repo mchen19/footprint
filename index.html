@@ -2,17 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>footmap</title>
+    <title>footprint</title>
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china-cities.js"></script>
 
 </head>
 <body>
-    <div id="369ef97f64ad4c64a3d5ac6176d14b18" class="chart-container" style="width:1200px; height:800px; margin:auto; top:30px;"></div>
+    <div id="351fde8ab5264a8d9bc558271a667327" class="chart-container" style="width:1200px; height:800px; margin:auto; top:30px;"></div>
     <script>
-        var chart_369ef97f64ad4c64a3d5ac6176d14b18 = echarts.init(
-            document.getElementById('369ef97f64ad4c64a3d5ac6176d14b18'), 'white', {renderer: 'canvas'});
-        var option_369ef97f64ad4c64a3d5ac6176d14b18 = {
+        var chart_351fde8ab5264a8d9bc558271a667327 = echarts.init(
+            document.getElementById('351fde8ab5264a8d9bc558271a667327'), 'white', {renderer: 'canvas'});
+        var option_351fde8ab5264a8d9bc558271a667327 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -52,11 +52,11 @@
             "type": "map",
             "name": "\u4e2a\u4eba\u8db3\u8ff9\u5730\u56fe",
             "label": {
-                "show": true,
+                "show": false,
                 "position": "top",
                 "margin": 8
             },
-            "mapType": "china",
+            "mapType": "china-cities",
             "data": [
                 {
                     "name": "\u5317\u4eac\u5e02",
@@ -71,23 +71,43 @@
                     "value": 1
                 },
                 {
-                    "name": "\u5c71\u4e1c\u7701",
+                    "name": "\u4e34\u6c82\u5e02",
                     "value": 1
                 },
                 {
-                    "name": "\u6c5f\u82cf\u7701",
+                    "name": "\u5357\u4eac\u5e02",
                     "value": 1
                 },
                 {
-                    "name": "\u6d59\u6c5f\u7701",
+                    "name": "\u82cf\u5dde\u5e02",
                     "value": 1
                 },
                 {
-                    "name": "\u5b89\u5fbd\u7701",
+                    "name": "\u65e0\u9521\u5e02",
                     "value": 1
                 },
                 {
-                    "name": "\u6e56\u5317\u7701",
+                    "name": "\u8fde\u4e91\u6e2f\u5e02",
+                    "value": 1
+                },
+                {
+                    "name": "\u5f90\u5dde\u5e02",
+                    "value": 1
+                },
+                {
+                    "name": "\u5e38\u5dde\u5e02",
+                    "value": 1
+                },
+                {
+                    "name": "\u676d\u5dde\u5e02",
+                    "value": 1
+                },
+                {
+                    "name": "\u6dee\u5357\u5e02",
+                    "value": 1
+                },
+                {
+                    "name": "\u8346\u5dde\u5e02",
                     "value": 1
                 }
             ],
@@ -167,44 +187,7 @@
         ]
     }
 };
-        chart_369ef97f64ad4c64a3d5ac6176d14b18.setOption(option_369ef97f64ad4c64a3d5ac6176d14b18);
-        chart_369ef97f64ad4c64a3d5ac6176d14b18.on('click', function (param){
-            var selected = param.name;
-                if (selected) {
-                    switch(selected){
-                        case '北京市':
-                            location.href = "provinces/北京.html";
-                            break;
-                        case '上海市':
-                            location.href = "provinces/上海.html";
-                            break;
-                        case '天津市':
-                            location.href = "provinces/天津.html";
-                            break;
-                        case '四川省':
-                            location.href = "provinces/四川.html";
-                            break;
-                        case '安徽省':
-                            location.href = "provinces/安徽.html";
-                            break;
-                        case '山东省':
-                            location.href = "provinces/山东.html";
-                            break;
-                        case '江苏省':
-                            location.href = "provinces/江苏.html";
-                            break;
-                        case '湖北省':
-                            location.href = "provinces/湖北.html";
-                            break;
-                        case '浙江省':
-                            location.href = "provinces/浙江.html";
-                            break;
-                        default:
-                            break;
-                    }
-
-            }
-      });
+        chart_351fde8ab5264a8d9bc558271a667327.setOption(option_351fde8ab5264a8d9bc558271a667327);
     </script>
 </body>
 </html>
